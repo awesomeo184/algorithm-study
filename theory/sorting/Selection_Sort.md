@@ -5,7 +5,7 @@
 - 가장 기본적인 정렬 알고리즘이며 구현이 쉽다.
 - 제자리 정렬 알고리즘이다.
 - 불안정 정렬 알고리즘이다.
-- 시간 복잡도가 O(n**2)으로 상당히 느리다.
+- 시간 복잡도가 O(n^2)으로 상당히 느리다.
 
 ## 기본 아이디어
 
@@ -42,8 +42,8 @@ Algorithm find_min_index(array, i)
             min_element = array[j]
     return min_index
 
-Algorithm swap(min_index, i)
-    input: index of minimum element, index to be replaced
+Algorithm swap(array, min_index, i)
+    input: array, index of minimum element, index to be replaced
     output: void
     
     tmp = array[i]
@@ -69,7 +69,8 @@ n-1회차: 내부루프 1회 반복
 
 총 비교연산 횟수: 1 + 2 + 3 + ... + n-1 = n(n-1)/2
 
-총 시간 복잡도는 n(n-1)/2 -> O(n**2)
+총 시간 복잡도는 n(n-1)/2 -> O(n^2)
+
 스왑할 때 일어나는 할당 연산은 O(n) 이므로 무시
 
 
