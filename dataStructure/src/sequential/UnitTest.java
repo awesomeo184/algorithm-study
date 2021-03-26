@@ -5,14 +5,14 @@ public class UnitTest {
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
 
-        list.addFirst(1);
-        list.addFirst(2);
-        list.addFirst(3);
-        list.addFirst(4);
+        list.addLast(1);
+        list.addLast(2);
+        list.addLast(3);
+        list.addLast(4);
 
-        list.deleteLast();
-        list.deleteLast();
-        list.deleteLast();
+        System.out.println(list);
+
+        list.reverse();
 
         System.out.println(list);
     }

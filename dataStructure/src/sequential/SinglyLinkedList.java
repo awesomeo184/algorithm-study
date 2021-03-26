@@ -18,7 +18,34 @@ public class SinglyLinkedList {
         }
     }
 
+    /*
+     * insert an element
+     * */
+    public void insert(int index, int data) {
+        checkPositionIndex(index);
 
+        if (index == 0) {
+            addFirst(data);
+        } else if (index == size) {
+            addLast(data);
+        } else {
+            Node newNode = new Node(data);
+            Node prev = head;
+            Node next = null;
+            int count = 1;
+
+            while (prev.next != null) {
+                next = prev.next;
+                if (index == count) {
+                    newNode.next = next;
+                    prev.next = newNode;
+                }
+                prev = next;
+                count++;
+            }
+        }
+        size++;
+    }
 
     /*
      * add first element
@@ -82,6 +109,30 @@ public class SinglyLinkedList {
             prev.next = null;
         }
         size--;
+    }
+
+    /*
+    * head
+    *  1 -> 2 -> 3 -> 4
+    *  1 <- 2 -> 3 -> 4
+    *  1 <- 2 <- 3 -> 4
+    *  1 <- 2 <- 3 <- 4
+    *                head
+    * prev와 current를 잡는다.
+    * prev를 한 칸 옮긴다.
+    * current를 한 칸 옮긴다.
+    * current의 next는 prev가 된다.*/
+    public void reverse() {
+        Node prev = null;
+        Node current = head;
+
+        while (current != null) {
+            Node next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head = prev;
     }
 
     public boolean isEmpty() {
