@@ -20,18 +20,17 @@
 ```HTML
 Algorithm bubble_sort(array)
     input: array
-    output: sorted array
+    output: void
 
     n = length of array
 
     for i = n-1 to 2 by -1 do
-        sorted = False           // 정렬되어있는 상태인지
+        sorted = True           // 정렬되어있는 상태인지
         sort(array, i, sorted)
         if sorted then
             break
-    return array
 
-Algorithm sort(i)
+Algorithm sort(array, i, sorted)
     input: array, index for terminating loop, flag
     output: void
 

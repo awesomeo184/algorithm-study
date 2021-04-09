@@ -2,6 +2,7 @@
 .idea/
 .ipynb_checkpoints
 main.py
+.DS_Store
 
 # out directory in dataStructure
 out/
