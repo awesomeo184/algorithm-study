@@ -28,7 +28,8 @@ package study.twopointer;
 public class Problem5 {
 
     public int solution(int n) {
-        int answer = 0, sum = 0;
+        int answer = 0;
+        int sum = 0;
         int m = n / 2 + 1;
 
         int[] arr = new int[m];
