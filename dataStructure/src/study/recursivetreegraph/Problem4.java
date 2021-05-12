@@ -8,20 +8,20 @@ public class Problem4 {
     Node root;
 
     public void BFS(Node root) {
-        Queue<Node> Q = new LinkedList<>();
-        Q.add(root);
+        Queue<Node> queue = new LinkedList<>();
         int L = 0;
-        while (!Q.isEmpty()) {
-            int len = Q.size();
+        queue.add(root);
+        while (!queue.isEmpty()) {
             System.out.print(L + " : ");
+            int len = queue.size();
             for (int i = 0; i < len; i++) {
-                Node cur = Q.poll();
+                Node cur = queue.poll();
                 System.out.print(cur.data + " ");
                 if (cur.lt != null) {
-                    Q.add(cur.lt);
+                    queue.add(cur.lt);
                 }
                 if (cur.rt != null) {
-                    Q.add(cur.rt);
+                    queue.add(cur.rt);
                 }
             }
             L++;
@@ -42,4 +42,5 @@ public class Problem4 {
     }
 
 }
+
 
