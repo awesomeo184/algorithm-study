@@ -1,5 +1,8 @@
 package study.recursivetreegraph;
 
+/*
+* 이진트리 순회 (DFS)
+* */
 public class Problem3 {
 
     Node root;

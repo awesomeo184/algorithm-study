@@ -3,6 +3,9 @@ package study.recursivetreegraph;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
+/*
+* BFS 레벨 탐색*/
 public class Problem4 {
 
     Node root;
