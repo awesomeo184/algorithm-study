@@ -20,7 +20,6 @@ class Point:
 
 def BFS(x, y):
     global n, m, graph, distance, dx, dy
-
     queue: Deque[Point] = deque()
     queue.append(Point(x, y))
     graph[x][y] = 0
