@@ -1,4 +1,4 @@
-package study.DFSandBFS;
+package study.graph.DFSandBFS;
 
 /*
  * 합이 같은 부분집합(DFS 아마존 인터뷰)

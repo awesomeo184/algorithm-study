@@ -1,4 +1,4 @@
-package study.DFSandBFS;
+package study.graph.DFSandBFS;
 
 /*
 * 중복 순열

@@ -1,4 +1,4 @@
-package study.DFSandBFS;
+package study.graph.DFSandBFS;
 
 import java.util.ArrayList;
 import java.util.List;
