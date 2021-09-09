@@ -1,7 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea/
 .ipynb_checkpoints
-main.py
 test.py
 .DS_Store
 
@@ -11,3 +10,4 @@ out/
 **/*.iml
 
 test
+private
