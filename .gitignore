@@ -3,6 +3,7 @@
 .ipynb_checkpoints
 test.py
 .DS_Store
+main.py
 
 # out directory in dataStructure
 out/
